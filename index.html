@@ -1,1 +1,213 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rudresh Lonkar - Portfolio</title>
+  <style>
+    /* Basic resets & font */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #fff;
+      padding: 2rem;
+      text-align: center;
+      border-bottom: 2px solid #ddd;
+    }
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    header h2 {
+      font-size: 1.1rem;
+      font-weight: normal;
+      color: #666;
+      margin-bottom: 1rem;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      font-size: 0.9rem;
+    }
+    .contact-info a {
+      color: #555;
+      text-decoration: none;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      background-color: #fff;
+      padding: 1rem 2rem;
+      margin-bottom: 1rem;
+      border-radius: 5px;
+      border-left: 4px solid #007ACC;
+    }
+    section h3 {
+      margin-bottom: 1rem;
+      color: #007ACC;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+    li + li {
+      margin-top: 0.5rem;
+    }
+    .job-title {
+      font-weight: bold;
+      margin-top: 0.5rem;
+    }
+    .job-dates {
+      font-size: 0.9rem;
+      color: #666;
+    }
+    .footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with Name and Contact Info -->
+  <header>
+    <h1>Rudresh Lonkar</h1>
+    <h2>Robotic Systems Engineering</h2>
+    <div class="contact-info">
+      <span>Email: <a href="mailto:rudresh.lonkar@rwth-aachen.de">rudresh.lonkar@rwth-aachen.de</a></span>
+      <span>Phone: <a href="tel:+4915758228246">+49 1575 822 8246</a></span>
+      <span>Location: Regensburg</span>
+      <span>LinkedIn: <a href="https://linkedin.com/in/rudreshlonkar" target="_blank">linkedin.com/in/rudreshlonkar</a></span>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Education -->
+    <section>
+      <h3>Education</h3>
+      <p>
+        <strong>M.Sc. Robotic Systems Engineering</strong>, RWTH Aachen University <br/>
+        <em>10/2021 - Present</em>
+      </p>
+    </section>
+
+    <!-- Work Experience -->
+    <section>
+      <h3>Work Experience</h3>
+
+      <div>
+        <p class="job-title">Working Student - Robotic Software Development at Innok Robotics</p>
+        <p class="job-dates">06/2024 - Present</p>
+        <ul>
+          <li>Testing and deploying software on on-field robots</li>
+          <li>Conducting experiments and providing solutions on existing software</li>
+          <li>Testing new sensors and controllers for potential future use</li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="job-title">Thesis on Mobile Manipulators at ZF Friedrichshafen</p>
+        <p class="job-dates">10/2023 - 04/2024</p>
+        <ul>
+          <li>Set up a mobile manipulator in ROS2</li>
+          <li>Set up complete digital twin in NVIDIA Isaac Sim simulation software</li>
+          <li>Developed navigation and motion planning frameworks to compare the simulation to real world robot</li>
+          <li>Compared behavior of the simulated robot with real robot</li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="job-title">Cobots, AGV and Vision Intern at ZF Friedrichshafen</p>
+        <p class="job-dates">04/2023 - 09/2023</p>
+        <ul>
+          <li>Collaborative Robot Programming</li>
+          <li>Testing different 2D and 3D Vision systems for industrial applications using rapid prototyping</li>
+          <li>Creating benchmarks for 2D vision systems</li>
+          <li>Automating assembly tasks using Cobots and Vision for various Automotive components</li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="job-title">Research Assistant (HiWi) at RWTH Aachen University (ifas)</p>
+        <p class="job-dates">07/2022 - 03/2023</p>
+        <ul>
+          <li>Performed Multi-Body (MBD) Simulation of an excavator to test a new Electro-Hydraulic Actuator (EHA) design</li>
+          <li>Simulated various systems on MATLAB, e.g. hydraulic circuits</li>
+          <li>Created FMU and simulated on Simulink</li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="job-title">Mechanical Design Engineer (Founding Member) at Calamus Electric</p>
+        <p class="job-dates">06/2018 - 10/2021</p>
+        <ul>
+          <li>Led a team in China for 2 months overseeing development and manufacturing</li>
+          <li>System design including design calculations, FMEA, 3D modeling</li>
+          <li>Developed mechatronic subsystems</li>
+          <li>Prototyping including 3D printing (FDM, SLA, SLS)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section>
+      <h3>Skills</h3>
+      <ul>
+        <li>ROS, ROS2, MoveIt2, Gazebo, nav2</li>
+        <li>Python, C++, Linux</li>
+        <li>NVIDIA Isaac Sim</li>
+        <li>Git, Bash, Docker</li>
+        <li>Computer Vision</li>
+        <li>SOLIDWORKS</li>
+        <li>3D Printing</li>
+      </ul>
+    </section>
+
+    <!-- Languages -->
+    <section>
+      <h3>Languages</h3>
+      <ul>
+        <li>English (Native or Bilingual Proficiency)</li>
+        <li>Deutsch (Limited Working Proficiency)</li>
+      </ul>
+    </section>
+
+    <!-- Activities -->
+    <section>
+      <h3>Activities</h3>
+      <ul>
+        <li>Formula SAE</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2024 Rudresh Lonkar | All rights reserved.
+  </div>
+</body>
+</html>
+
